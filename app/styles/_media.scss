@@ -1,0 +1,370 @@
+@media (max-width: 1140px) {
+
+  .container {
+    padding: 0 100px;
+  }
+  .section__title {
+    font-size: 50px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-wrapper {
+    margin-bottom: 62px;
+  }
+  .btn__border {
+    border: 3px solid #007dfe;
+    padding: 8px 33px;
+    font-size: 32px;
+  }
+  .header {
+    &__container {
+      padding: 18px 50px 14px 50px;
+      justify-content: space-between;
+      position: relative;
+    }
+    &__mobile {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: none;
+      flex-direction: column;
+      justify-content: normal;
+      row-gap: 86px;
+      padding-top: 143px;
+      padding-bottom: 100px;
+      height: 100vh;
+      background-color: $color-white;
+      z-index: 100;
+    }
+    &__mobile.header__mobile--active {
+      display: flex;
+    }
+    &__wrapper {
+      flex-direction: column;
+      row-gap: 55px;
+    }
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 42px;
+    }
+    &__logo {
+      align-self: flex-start;
+    }
+    &__logo::after {
+      display: none;
+    }
+    &__item {
+      text-align: center;
+    }
+    &__link {
+      font-size: 32px;
+    }
+    &__icons {
+      column-gap: 20px;
+    }
+    &__social-icon {
+      width: 41px;
+      height: 38px;
+    }
+    &__burger {
+      display: block;
+      height: 25px;
+      position: relative;
+      width: 25px;
+    }
+  }
+
+  .burger__line,
+  .header__burger::before,
+  .header__burger::after {
+    background-color: $color-blue-1;
+    content: '';
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: .3s;
+    transform: translate(-50%, -50%);
+    width: 25px;
+  }
+  .burger__line {
+    top: 50%;
+  }
+  .header__burger::before {
+    top: calc(50% - 8px);
+  }
+  .header__burger::after {
+    top: calc(50% + 8px);
+  }
+  .header__burger.header__burger--active .burger__line {
+    opacity: 0;
+  }
+  .header__burger.header__burger--active::before{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .header__burger.header__burger--active::after {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .hero {
+    padding-top: 75px;
+    padding-bottom: 57px;
+
+    &__header {
+      margin-bottom: 70px;
+    }
+    &__date {
+      font-size: 44px;
+      margin-bottom: 10px;
+    }
+    &__title {
+      max-width: 350px;
+      font-size: 75px;
+      line-height: 66px;
+    }
+    &__subtitle {
+      top: 82px;
+      left: -123px;
+      font-size: 28px;
+    }
+    &__img {
+      top: -22px;
+      width: 329px;
+      height: 300px;
+    }
+    &__list {
+      column-gap: 3px;
+    }
+    &__brand {
+      max-width: 75%;
+    }
+  }
+  .speakers {
+    padding-top: 29px;
+    padding-bottom: 24px;
+
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__text-content {
+      padding: 11px 23px;
+    }
+  }
+  .contacts {
+    padding-top: 102px;
+    padding-bottom: 85px;
+
+    &__form {
+      row-gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+  .container {
+    padding: 0 70px;
+  }
+  .header {
+    &__container {
+      padding: 18px 28px 14px 26px;
+    }
+  }
+  .hero {
+    &__img {
+      width: 244px;
+      height: 211px;
+    }
+  }
+  .speakers {
+    &__item {
+      height: 293px;
+    }
+  }
+}
+
+@media (max-width: 715px) {
+  .container {
+    padding: 0 20px;
+  }
+  .section__title {
+    font-size: 40px;
+  }
+  .btn__bg {
+    padding: 25px 19px;
+    letter-spacing: 4px;
+  }
+  .errors-container {
+    width: 100%;
+  }
+  .swiper-wrapper {
+    margin-bottom: 48px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 9px;
+  }
+  .header {
+    &__container {
+      padding: 16px 28px 14px 28px;
+    }
+  }
+  .hero {
+    padding-top: 55px;
+    padding-bottom: 80px;
+
+    &__header {
+      margin-bottom: 60px;
+      padding-left: 30px;
+    }
+    &__date {
+      font-size: 31px;
+      margin-bottom: 5px;
+    }
+    &__title {
+      max-width: 255px;
+      margin-bottom: 9px;
+      font-size: 52px;
+      line-height: 48px;
+    }
+    &__subtitle {
+      top: 58px;
+      left: -57px;
+      font-size: 20px;
+    }
+    &__img {
+      width: 190px;
+      height: 172px;
+    }
+    &__btn {
+      margin-bottom: 60px;
+    }
+    &__arrow {
+      display: none;
+    }
+  }
+  .speakers {
+    padding-top: 2px;
+    padding-bottom: 38px;
+
+    &__title {
+      margin-bottom: 47px;
+    }
+    &__item {
+      height: 300px;
+    }
+    &__text-content {
+      padding: 17px 23px;
+    }
+    &__item-title {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+  }
+  .contacts {
+    padding-top: 77px;
+    padding-bottom: 85px;
+
+    &__title {
+      margin-bottom: 82px;
+    }
+    &__form {
+      row-gap: 28px;
+      margin-bottom: 104px;
+    }
+    &__inputs-block {
+      flex-direction: column;
+      row-gap: 27px;
+    }
+    &__btn {
+      align-self: center;
+      margin-top: 108px;
+      padding: 26px 58px;
+    }
+    &__mail {
+      font-size: 28px;
+    }
+    &__phone {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+@media (max-width: 586px) {
+  .btn__border {
+    border: 2px solid #007dfe;
+    padding: 6px 24px;
+    font-size: 22px;
+  }
+  .header {
+    &__container {
+      padding: 18px 21px 14px 21px;
+    }
+    &__mobile {
+      padding-top: 48px;
+      padding-bottom: 100px;
+      row-gap: 35px;
+    }
+    &__wrapper {
+      row-gap: 25px;
+    }
+    &__list {
+      row-gap: 15px;
+    }
+    &__link {
+      font-size: 22px;
+    }
+    &__icons {
+      column-gap: 12px;
+    }
+    &__social-icon {
+      width: 29px;
+      height: 26px;
+    }
+  }
+  .hero {
+    &__img {
+      width: 140px;
+      height: 129px;
+    }
+  }
+  .speakers {
+    &__item {
+      height: 277px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero {
+    &__img {
+      position: static;
+      display: block;
+      margin: 0 auto;
+      width: 237px;
+      height: 215px;
+      margin-bottom: 50px;
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+  .speakers {
+    &__item {
+      height: 277px;
+    }
+  }
+}
+
+
+
+
