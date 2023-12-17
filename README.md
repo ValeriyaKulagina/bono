@@ -13,7 +13,8 @@ HTML5, SCSS, JS6+;
 
 Для запуска необходимо выполнить команду:
 
-gulp
+1) npm i
+2) gulp
 
 с демо-версией также можно ознакомиться по ссылке:
 https://valeriyakulagina.github.io/bono-demo/
